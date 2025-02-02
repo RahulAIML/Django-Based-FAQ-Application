@@ -155,5 +155,11 @@ curl http://localhost:8000/api/faqs/?lang=en
         }
     }
 ]
+```
+## For any sugessions or modifications please contact me :
+gmail: bhattacharyabuddhadeb147@gmail.com
+mobile:8927349484
+
+# Thank you for giving your time in the evaluation of my project. 
 
 
