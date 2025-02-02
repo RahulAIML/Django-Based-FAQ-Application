@@ -156,6 +156,51 @@ curl http://localhost:8000/api/faqs/?lang=en
 ]
 
 ```
+## Frontend (Django Template)
+
+This section explains how the FAQ data is rendered and displayed using Django templates. The application provides a simple frontend to fetch and display FAQs in multiple languages.
+
+### Overview
+The frontend is powered by **Django Templates**, and the data is fetched from the API (`/api/faqs/`) based on the selected language. The template includes a **language selector** to dynamically switch between different languages (English, Hindi, Bengali) and displays the FAQ questions and answers in the chosen language.
+
+---
+
+### Template File: `faq_list.html`
+
+This is the main template responsible for displaying the list of FAQs. It interacts with the backend API and dynamically renders the FAQ data.
+
+#### Key Features:
+1. **Language Selector:**
+   - A dropdown allows users to choose the language in which they want to view the FAQs.
+   - The selected language is passed to the backend via the URL query string (`?lang=<language>`).
+   
+2. **Display FAQs:**
+   - The template loops through a list of FAQs, displaying the `question` and `answer`.
+   - The `answer` is rendered as HTML content (using the `|safe` filter), which allows for rich-text formatting (e.g., bold, italic, links).
+   
+3. **Translations:**
+   - If available, the template displays translations for the FAQ question in different languages (Hindi and Bengali). These are fetched from the `question_translations` dictionary.
+
+---
+
+### Template Structure
+
+The template structure includes the following key parts:
+
+#### 1. **Language Selector Dropdown**
+
+This dropdown lets users select a language. The page reloads with the selected language to show the FAQs in that language.
+
+```html
+<div>
+    <label for="language-selector">Select Language: </label>
+    <select id="language-selector">
+        <option value="en" {% if lang == 'en' %} selected {% endif %}>English</option>
+        <option value="hi" {% if lang == 'hi' %} selected {% endif %}>Hindi</option>
+        <option value="bn" {% if lang == 'bn' %} selected {% endif %}>Bengali</option>
+    </select>
+</div>
+
 
 
 # ---
