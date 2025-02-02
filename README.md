@@ -47,7 +47,7 @@ Follow these steps to set up the project locally:
 
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    use `venv\Scripts\activate`
     ```
 
 3. **Install the dependencies:**
@@ -112,3 +112,46 @@ The project includes unit tests to ensure proper functionality. You can run them
 
 ```bash
 pytest
+
+## API Endpoint Documentation
+
+The following API endpoints are available for interacting with the FAQ model. The API supports **multilingual** FAQ retrieval and allows for managing FAQs with easy-to-use HTTP methods.
+
+---
+
+### 1. **GET /api/faqs/**
+
+**Description:**  
+Fetch a list of all FAQs in the specified language (or default language if not specified).
+
+**Method:** `GET`
+
+**Query Parameters:**
+- `lang` (optional): The language code in which to fetch the FAQs. Supported languages: `en` (English), `hi` (Hindi), `bn` (Bengali). Defaults to `en` if not provided.
+
+**Example Request:**
+```bash
+curl http://localhost:8000/api/faqs/?lang=en
+
+[
+    {
+        "id": 1,
+        "question": "What is Django?",
+        "answer": "<p>Django is a high-level Python web framework...</p>",
+        "question_translations": {
+            "hi": "Django क्या है?",
+            "bn": "Django কী?"
+        }
+    },
+    {
+        "id": 2,
+        "question": "How do I install Django?",
+        "answer": "<p>To install Django, you can use pip...</p>",
+        "question_translations": {
+            "hi": "मैं Django को कैसे इंस्टॉल करूं?",
+            "bn": "আমি Django কিভাবে ইনস্টল করব?"
+        }
+    }
+]
+
+
