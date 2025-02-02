@@ -160,13 +160,13 @@ curl http://localhost:8000/api/faqs/?lang=en
 
 # ---
 
-## Final Thoughts
+## NOTE 
 
 Thank you for taking the time to evaluate my project.
 I hope the solution meets the requirements, and I am open to any feedback or suggestions for improvement. Please feel free to reach out if you have any questions or need further clarification.
 Looking forward to hearing from you!
 
-# For any sugessions or modifications please contact me :
+ For any sugessions or modifications please contact me :
 gmail: bhattacharyabuddhadeb147@gmail.com
 mobile:8927349484
 
