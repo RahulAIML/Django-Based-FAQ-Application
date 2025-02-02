@@ -202,7 +202,7 @@ This dropdown lets users select a language. The page reloads with the selected l
 </div>
 
 
-
+```
 # ---
 
 ## NOTE 
