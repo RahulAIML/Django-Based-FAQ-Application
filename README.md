@@ -134,27 +134,27 @@ Fetch a list of all FAQs in the specified language (or default language if not s
 **Example Request:**
 ```bash
 curl http://localhost:8000/api/faqs/?lang=en
-
 [
     {
         "id": 1,
-        "question": "What is Django?",
-        "answer": "<p>Django is a high-level Python web framework...</p>",
+        "question": "What is quantum computing?",
+        "answer": "<p>Quantum computing is a type of computation that takes advantage of quantum mechanics...</p>",
         "question_translations": {
-            "hi": "Django क्या है?",
-            "bn": "Django কী?"
+            "hi": "क्वांटम कंप्यूटिंग क्या है?",
+            "bn": "কোয়ান্টাম কম্পিউটিং কী?"
         }
     },
     {
         "id": 2,
-        "question": "How do I install Django?",
-        "answer": "<p>To install Django, you can use pip...</p>",
+        "question": "How does blockchain technology work?",
+        "answer": "<p>Blockchain is a decentralized digital ledger that records transactions across multiple computers...</p>",
         "question_translations": {
-            "hi": "मैं Django को कैसे इंस्टॉल करूं?",
-            "bn": "আমি Django কিভাবে ইনস্টল করব?"
+            "hi": "ब्लॉकचेन तकनीक कैसे काम करती है?",
+            "bn": "ব্লকচেইন প্রযুক্তি কিভাবে কাজ করে?"
         }
     }
 ]
+
 ```
 
 
