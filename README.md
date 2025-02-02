@@ -115,7 +115,7 @@ pytest
 ```
 
 
-##API Endpoint Documentation
+## API Endpoint Documentation
 
 The following API endpoints are available for interacting with the FAQ model. The API supports **multilingual** FAQ retrieval and allows for managing FAQs with easy-to-use HTTP methods.
 
