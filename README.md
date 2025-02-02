@@ -39,8 +39,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/backend-developer-test.git
-    cd backend-developer-test
+    git clone https://github.com/RahulAIML/Bharat_FD_Backend_Intern_Task_Submission.git
     ```
 
 2. **Create and activate a virtual environment:**
