@@ -104,7 +104,6 @@ Create a `.env` file in the project root with the following variables:
 ```
 GEMINI_API_KEY=your_gemini_api_key_here
 DEBUG=True
-SECRET_KEY=your_django_secret_key
 ```
 
 ## License
